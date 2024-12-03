@@ -14,7 +14,7 @@ with open(ruta_archivo) as file:
     secuencia_actual = ''  # Variable temporal para guardar la secuencia actual
 
     for linea in file:
-        if linea.startswith('>'):  # Si es un nombre de secuencia
+        if linea.startswith('>'):  # Si es un nombre de secuencia.
             if secuencia_actual:
                 secuencias.append(secuencia_actual)
                 secuencia_actual = ''  # Reiniciar la secuencia
